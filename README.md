@@ -40,16 +40,16 @@ https://github.com/Siddharthjagtap346/finance-dashboard
 ## 📸 Screenshots
 
 ### 🏠 Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.jpeg)
 
 ### 📊 Insights
-![Insights](./screenshots/insights.png)
+![Insights](./screenshots/insights.jpeg)
 
 ### 💳 Transactions
-![Transactions](./screenshots/transactions.png)
+![Transactions](./screenshots/transactions.jpeg)
 
 ### Settings
-![settings](./screenshots/settings.png)
+![settings](./screenshots/settings.jpeg)
 
 ---
 ## 📌 Assignment Coverage
