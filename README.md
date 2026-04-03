@@ -1,3 +1,25 @@
+<h1 align="center">💰 Finance Dashboard UI</h1>
+
+<p align="center">
+  A modern, production-ready finance dashboard built for the Zorvyn FinTech Internship 🚀
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-blue?logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Vite-Fast-purple?logo=vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Modern-38bdf8?logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Zustand-State%20Management-000" />
+  <img src="https://img.shields.io/badge/Framer%20Motion-Animations-pink" />
+  <img src="https://img.shields.io/badge/Recharts-Data%20Viz-orange" />
+</p>
+
+<p align="center">
+  🔗 <a href="https://finance-dashboard-beryl-iota.vercel.app">Live Demo</a> •
+  💻 <a href="https://github.com/Siddharthjagtap346/finance-dashboard">GitHub</a>
+</p>
+
+---
 # 💰 Finance Dashboard UI
 
 A modern, responsive **Finance Dashboard** built as part of the **Frontend Developer Intern assignment for Zorvyn FinTech**.
@@ -12,10 +34,21 @@ This project demonstrates strong frontend fundamentals including **UI design, st
 https://finance-dashboard-beryl-iota.vercel.app
 
 🔗 **GitHub Repository:**
-(Add your repo link here)
+https://github.com/Siddharthjagtap346/finance-dashboard
 
 ---
+## 📸 Screenshots
 
+### 🏠 Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### 📊 Insights
+![Insights](./screenshots/insights.png)
+
+### 💳 Transactions
+![Transactions](./screenshots/transactions.png)
+
+---
 ## 📌 Assignment Coverage
 
 This project fully satisfies **all core and most optional requirements** of the assignment:
@@ -100,14 +133,14 @@ This project fully satisfies **all core and most optional requirements** of the 
 
 ## ✨ Optional Enhancements Implemented
 
-✔ Dark Mode Toggle
-✔ Local Storage Persistence
-✔ Export Functionality (CSV + JSON)
-✔ Animations (page transitions + hover effects)
-✔ Advanced Filtering (date-based + category search)
-✔ Responsive Charts
-✔ Modular Component Architecture
-
+- ![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Enabled-111827?style=flat&logo=moon&logoColor=white)
+- ![Local Storage](https://img.shields.io/badge/Storage-LocalStorage-6366f1?style=flat)
+- ![Export](https://img.shields.io/badge/Export-CSV%20%7C%20JSON-22c55e?style=flat)
+- ![Animations](https://img.shields.io/badge/Animations-Framer%20Motion-f472b6?style=flat)
+- ![Filtering](https://img.shields.io/badge/Filtering-Advanced-f59e0b?style=flat)
+- ![Responsive](https://img.shields.io/badge/Responsive-Mobile%20%2B%20Desktop-0ea5e9?style=flat)
+- ![Architecture](https://img.shields.io/badge/Architecture-Modular-8b5cf6?style=flat)
+  
 ---
 
 ## 🧠 Key Features
@@ -131,34 +164,27 @@ This project fully satisfies **all core and most optional requirements** of the 
 * Clean separation of logic and UI
 
 ---
-
 ## 🛠 Tech Stack
 
-### Frontend
+### 🚀 Frontend
+![React](https://img.shields.io/badge/React-19-61dafb?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646cff?logo=vite)
 
-* React 19
-* TypeScript
-* Vite
+### 🎨 Styling
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Utility%20First-38bdf8?logo=tailwindcss)
 
-### Styling
+### 🧠 State Management
+![Zustand](https://img.shields.io/badge/Zustand-Lightweight-black)
 
-* Tailwind CSS
+### 📊 Charts
+![Recharts](https://img.shields.io/badge/Recharts-Visualization-orange)
 
-### State Management
+### 🎞 Animations
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Smooth-pink)
 
-* Zustand
-
-### Charts & Visualization
-
-* Recharts
-
-### Animations
-
-* Framer Motion
-
-### Icons
-
-* Lucide React
+### 🎯 Icons
+![Lucide](https://img.shields.io/badge/Lucide-Icons-gray)
 
 ---
 
@@ -208,6 +234,14 @@ npm run preview
 ```
 
 ---
+## 🧪 Edge Case Handling
+
+- Empty transaction states handled gracefully
+- No data scenarios for charts
+- Large dataset rendering handled efficiently
+- Invalid filters safely managed
+
+---
 
 ## 🧪 Design Decisions & Approach
 
@@ -234,6 +268,14 @@ The UI is intentionally clean and minimal to ensure clarity and usability.
 * Responsive design across devices
 
 ---
+## ⚡ Performance & Optimization
+
+- Efficient state updates using Zustand
+- Memoized computed data for charts
+- Minimal re-renders
+- Lightweight and fast build using Vite
+
+---
 
 ## 🔮 Future Improvements
 
@@ -254,14 +296,14 @@ The UI is intentionally clean and minimal to ensure clarity and usability.
 
 ## 💡 Final Note
 
-This project reflects my approach to frontend development — focusing on:
+This project is not just an assignment — it reflects how I approach building real-world applications:
 
-* Clean UI/UX
-* Scalable architecture
-* Practical feature implementation
-* Attention to detail
+- Thinking beyond requirements
+- Designing for users, not just visuals
+- Writing scalable and maintainable code
+- Focusing on performance and experience
 
-I aimed to go beyond the basic requirements and build something **realistic, interactive, and production-inspired**.
+I aimed to build something that feels **production-ready, intuitive, and impactful**.
 
 ---
 
