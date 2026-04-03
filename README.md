@@ -20,7 +20,6 @@
 </p>
 
 ---
-# 💰 Finance Dashboard UI
 
 A modern, responsive **Finance Dashboard** built as part of the **Frontend Developer Intern assignment for Zorvyn FinTech**.
 
