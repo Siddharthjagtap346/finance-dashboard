@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌐 GLOBAL RESET + FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 🎯 BODY BASE */
+body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 antialiased;
+}
+
+/* 🧊 SMOOTH TRANSITIONS (makes UI feel premium) */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* 📜 SCROLLBAR (clean minimal) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af; /* gray-400 */
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563; /* gray-600 */
+}
+
+/* 🧩 REUSABLE COMPONENT CLASSES */
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow p-5;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition;
+  }
+  .btn-secondary:active {
+  transform: scale(0.97);
+}
+.btn-secondary {
+  @apply bg-white dark:bg-gray-700 
+         text-gray-700 dark:text-gray-200 
+         border border-gray-300 dark:border-gray-600 
+         px-4 py-2 rounded-lg 
+         hover:bg-gray-100 dark:hover:bg-gray-600 
+         transition font-medium shadow-sm;
+}
+  .input {
+    @apply border rounded-lg px-3 py-2 w-full dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+  }
+}
+
+/* ✨ NICE SELECTION COLOR */
+::selection {
+  background: #6366f1;
+  color: white;
+}
+
+/* 🔥 OPTIONAL: GLASS EFFECT (use later if needed) */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.dark .glass {
+  background: rgba(31, 41, 55, 0.6);
+}
