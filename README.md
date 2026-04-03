@@ -1,73 +1,268 @@
-# React + TypeScript + Vite
+# 💰 Finance Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Finance Dashboard** built as part of the **Frontend Developer Intern assignment for Zorvyn FinTech**.
 
-Currently, two official plugins are available:
+This project demonstrates strong frontend fundamentals including **UI design, state management, data visualization, and user experience** — all implemented without backend dependency using clean architecture and scalable patterns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Deployed App:**
+https://finance-dashboard-beryl-iota.vercel.app
 
-## Expanding the ESLint configuration
+🔗 **GitHub Repository:**
+(Add your repo link here)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📌 Assignment Coverage
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project fully satisfies **all core and most optional requirements** of the assignment:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### ✅ 1. Dashboard Overview
+
+* Summary Cards → Balance, Income, Expenses, Savings
+* 📈 **Balance Trend Chart** (time-based visualization)
+* 🥧 **Spending Breakdown Pie Chart** (category-based)
+* Recent transactions preview
+* Compact insights section
+
+---
+
+### ✅ 2. Transactions Section
+
+* Full transaction table with:
+
+  * Date
+  * Category
+  * Amount
+  * Type (Income/Expense)
+* Features:
+
+  * 🔍 Search (category-based)
+  * 🎯 Filter (income/expense)
+  * 📅 Date filter (7d / 30d / all)
+  * 📤 Export to CSV / JSON
+  * 📊 Responsive table UI
+
+---
+
+### ✅ 3. Role-Based UI (Frontend Simulation)
+
+* **Viewer**
+
+  * Read-only access
+* **Admin**
+
+  * Add transactions
+  * Delete transactions
+
+👉 Role switching implemented via Settings panel
+
+---
+
+### ✅ 4. Insights Section
+
+* Smart analytics generated from transaction data:
+
+  * Highest spending category
+  * Most active category
+  * Monthly income vs expense comparison
+  * Saving rate (%)
+  * Smart insights (dynamic observations)
+
+---
+
+### ✅ 5. State Management
+
+* Centralized state using **Zustand**
+* Managed states:
+
+  * Transactions
+  * Filters
+  * Search
+  * Role
+  * Date filters
+* Persistent storage via **localStorage**
+
+---
+
+### ✅ 6. UI & UX
+
+* Clean and modern design using **Tailwind CSS**
+* Fully responsive (mobile + desktop)
+* Smooth animations using **Framer Motion**
+* Dark mode support 🌙
+* Handles empty states gracefully
+
+---
+
+## ✨ Optional Enhancements Implemented
+
+✔ Dark Mode Toggle
+✔ Local Storage Persistence
+✔ Export Functionality (CSV + JSON)
+✔ Animations (page transitions + hover effects)
+✔ Advanced Filtering (date-based + category search)
+✔ Responsive Charts
+✔ Modular Component Architecture
+
+---
+
+## 🧠 Key Features
+
+### 📊 Data Visualization
+
+* Line Chart → Balance trend over time
+* Pie Chart → Category spending distribution
+* Bar Chart → Monthly income vs expenses
+
+### ⚡ Performance & UX
+
+* Optimized rendering using computed data
+* Smooth UI transitions
+* Mobile-first responsive layouts
+
+### 🧩 Scalable Architecture
+
+* Modular components
+* Reusable UI elements
+* Clean separation of logic and UI
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React 19
+* TypeScript
+* Vite
+
+### Styling
+
+* Tailwind CSS
+
+### State Management
+
+* Zustand
+
+### Charts & Visualization
+
+* Recharts
+
+### Animations
+
+* Framer Motion
+
+### Icons
+
+* Lucide React
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── cards/
+│   ├── charts/
+│   ├── transactions/
+│   ├── ui/
+│   └── layout/
+├── pages/
+│   ├── Dashboard.tsx
+│   ├── Transactions.tsx
+│   ├── InsightsPage.tsx
+│   └── Settings.tsx
+├── store/
+│   └── useFinanceStore.ts
+├── utils/
+│   ├── insights.ts
+│   └── export.ts
+├── App.tsx
+├── AnimatedRoutes.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Setup Instructions
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repo
+git clone <your-repo-url>
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview build
+npm run preview
 ```
+
+---
+
+## 🧪 Design Decisions & Approach
+
+### 1. Simplicity First
+
+The UI is intentionally clean and minimal to ensure clarity and usability.
+
+### 2. Local-First Architecture
+
+* No backend required
+* Data persists via localStorage
+* Easy to extend with APIs later
+
+### 3. Component Reusability
+
+* Cards, charts, tables are modular
+* Easy to scale and maintain
+
+### 4. UX-Focused Enhancements
+
+* Smooth animations
+* Empty state handling
+* Role-based UI feedback
+* Responsive design across devices
+
+---
+
+## 🔮 Future Improvements
+
+* API integration (mock/real backend)
+* Authentication system
+* Advanced analytics (AI insights)
+* Multi-user support
+* Data sync across devices
+
+---
+
+## 👨‍💻 Author
+
+**Siddharth Jagtap**
+📧 [siddharthjagtap5091@gmail.com](mailto:siddharthjagtap5091@gmail.com)
+
+---
+
+## 💡 Final Note
+
+This project reflects my approach to frontend development — focusing on:
+
+* Clean UI/UX
+* Scalable architecture
+* Practical feature implementation
+* Attention to detail
+
+I aimed to go beyond the basic requirements and build something **realistic, interactive, and production-inspired**.
+
+---
+
+⭐ If you like this project, feel free to explore and give feedback!
