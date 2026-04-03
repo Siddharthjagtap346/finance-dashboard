@@ -48,6 +48,9 @@ https://github.com/Siddharthjagtap346/finance-dashboard
 ### 💳 Transactions
 ![Transactions](./screenshots/transactions.png)
 
+### Settings
+![settings](./screenshots/settings.png)
+
 ---
 ## 📌 Assignment Coverage
 
